@@ -3,7 +3,6 @@
     y negativos, apartir de este vector generar un nuevo vector binario, donde los numeros negativos sean 0
     y los positivos sean 1;
 */
-
 import java.util.Scanner;
 
 class ProgramaUno {
