@@ -4,26 +4,21 @@
 */
 
 #include <iostream>
-#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
-    // int i = 0;
-    // vector <int> precios();
-    // while( true ){
-    //     cout<<"Ingresa el precio: ";
-    //     cin>> precios[i];
-    //     if (precios[i] == 0 ){
-    //         break;
-    //     }3
-    //     i++;
-    // }
-    string name[30];
-    cout<<"type your name: ";
-    cin>>name;
-    // for(int i = 0; i < sizeof(precios); i++){
-    //     cout<<precios[i];
-    // }
-    cout<< name->length()<<endl;
+    bool isnotCero = true;
+    int i = 1;
+    int valor, res=0;
+    while(isnotCero){
+        cout<<"Ingresa valor del producto ["<<i<<"]: ";
+        cin>>valor;
+        res += valor;
+        if(valor == 0){
+            isnotCero = false;
+        }
+        i++;
+    }
+    cout<<"El precio final es: "<<res<<endl;
     return 0;
 }
